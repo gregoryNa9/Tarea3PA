@@ -42,32 +42,34 @@ El formulario permite registrar productos con campos como nombre, precio, correo
 
 ## Estructura del Proyecto
 
-\`\`\`
-consumo-api-rest/
-│
-├── public/
-│
-├── src/
-│   ├── components/
-│   │   └── Formulario.js
-│   ├── services/
-│   │   └── api.js
-│   ├── App.js
-│   ├── index.js
+U2Tarea3_YasigJuan_Avanzada/
 │
 ├── backend/
-│   ├── controllers/
-│   │   └── product.controller.js
-│   ├── models/
-│   │   └── product.js
-│   ├── routes/
-│   │   └── products.routes.js
-│   └── server.js
+│ ├── db.js # Conexión a la base de datos MongoDB (antes MySQL)
+│ ├── server.js # Lógica del servidor y validaciones backend
+│ ├── controllers/
+│ │ └── product.controller.js # Controlador de producto
+│ ├── models/
+│ │ └── product.js # Esquema Mongoose
+│ ├── routes/
+│ │ └── products.routes.js # Rutas del API
+│ └── package.json # Dependencias de Node.js
 │
-├── docker-compose.yml
-├── package.json
-├── README.md
-\`\`\`
+├── frontend/ (React)
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ │ └── Formulario.js # Formulario de registro con validaciones
+│ │ ├── services/
+│ │ │ └── api.js # Servicio para conectar con backend
+│ │ ├── App.js
+│ │ └── index.js
+│
+├── imagenes/ # Evidencias de ejecución y validaciones
+│
+├── docker-compose.yml # Configuración para MongoDB y mongo-express
+├── .gitignore # Archivos y carpetas ignoradas por Git
+└── README.md # Documentación del proyecto
 
 ---
 
@@ -133,14 +135,14 @@ consumo-api-rest/
 ## Vista previa
 
 - Formulario responsive
-![Vista del formulario](img/imagen1.png)
+![Vista del formulario](src/Img/imagen1.png)
 
 - Mensajes de error y éxito mostrados en una modal.
-![Validaciones alertas](img/imagen2.png)
-![Validaciones alertas](img/imagen3.png)
+![Validaciones alertas](src/Img/imagen2.png)
+![Validaciones alertas](src/Img/imagen3.png)
 
 - Verificacion de los datos en Base de datos MongoExpress
-![Validaciones registros en BD](img/imagen4.png)
+![Validaciones registros en BD](src/Img/imagen4.png)
 
 ## Notas Finales
 
